@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tool.description %>
+</p>
+
+<p>
+  <strong>Day price:</strong>
+  <%= @tool.day_price %>
+</p>
+
+<p>
+  <strong>Week price:</strong>
+  <%= @tool.week_price %>
+</p>
+
+<%= link_to 'Edit', edit_tool_path(@tool) %> |
+<%= link_to 'Back', tools_path %>
