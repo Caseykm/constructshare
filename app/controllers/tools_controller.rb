@@ -26,8 +26,6 @@ class ToolsController < ApplicationController
   def create
     @tool = Tool.new(tool_params)
 
-    # owner = User.find_by(username: tool_params[owner])
-    # tool_params[:user_id] = owner.id
 
     respond_to do |format|
       if @tool.save
@@ -72,6 +70,6 @@ class ToolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tool_params
-      params.require(:tool).permit(:description, :day_price, :week_price, :owner_id)
+      params.require(:tool).permit(:description, :day_price, :week_price, :owner)
     end
 end
