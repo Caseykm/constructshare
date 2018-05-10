@@ -14,7 +14,7 @@ class ToolsController < ApplicationController
 
   # GET /tools/new
   def new
-    @tool = Tool.new
+    @tool = current_user.owner.tools.build
   end
 
   # GET /tools/1/edit
@@ -25,6 +25,9 @@ class ToolsController < ApplicationController
   # POST /tools.json
   def create
     @tool = Tool.new(tool_params)
+
+    # owner = User.find_by(username: tool_params[owner])
+    # tool_params[:user_id] = owner.id
 
     respond_to do |format|
       if @tool.save
@@ -69,6 +72,6 @@ class ToolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tool_params
-      params.require(:tool).permit(:description, :day_price, :week_price)
+      params.require(:tool).permit(:description, :day_price, :week_price, :owner_id)
     end
 end
