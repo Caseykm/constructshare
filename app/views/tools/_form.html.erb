@@ -16,6 +16,21 @@
     <%= form.text_field :description, id: :tool_description %>
   </div>
 
+
+ <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+    <% if form.object.image? %>
+    <%= form.label :remove_image %>
+    <%= form.check_box :remove_image %>
+    <% end %>
+  </div>
+
+  <!--div class="field">
+    add an image.... <br>
+    <%= form.file_field :image %>
+  </div> -->
+
    <!-- <div class="field">
     <%= form.label :owner %>
     <%= form.text_field :owner, id: :tool_owner_id %>

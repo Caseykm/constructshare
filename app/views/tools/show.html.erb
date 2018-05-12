@@ -14,6 +14,10 @@
   <strong>Week price:</strong>
   <%= @tool.week_price %>
 </p>
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @tool.image.url, height: 420, width: 640%>
+</p>
 
 <%= link_to 'Edit', edit_tool_path(@tool) %> |
 <%= link_to 'Back', tools_path %>
