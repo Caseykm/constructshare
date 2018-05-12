@@ -1,11 +1,25 @@
 
 
 <div class="container">
+
   <div class="card">
-    <h2>New Tool</h2>
 
-    <%= render 'form', tool: @tool %>
+    <div class="card-header">
+     <div class="lead"><%= "Create your equipment's profile" %></div>
+    </div>
 
+    <% if user_signed_in? %>
+        <%= render 'form', tool: @tool %>
+    <%else %>
+      <h3>Join or login to list your equipment!</h3>
+        <h1><%= link_to "Sign up!", new_user_registration_path %> <h1>
+    <% end %>
   </div>
   <h4> <%= link_to 'Back', tools_path %></h4>
-</div>
+
+
+
+
+ 
+
+

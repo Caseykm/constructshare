@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<h2>Equipment available for hire below or, <%= link_to 'Click here to create your own equipment listing', new_tool_path %></h2>
+<h2>Equipment available for hire below</h2> <mark class="text-warning"><%= link_to 'Click to create your own equipment listing', new_tool_path %></mark>
 
 <h3></h3>
 
@@ -15,20 +15,19 @@
               <p>Price per day $<%= tool.day_price %></p>
               <p>Price per week $<%= tool.week_price %></p>
               <p>Posted by <%= tool.user %></p>
-            <p>
-            <% if tool.user != current_user %>
-             <%= link_to 'View Equipment Details', tool %>
-             <% end %>
-             <br>
-              <% if tool.user == current_user %>
-                <%= link_to 'Edit listing', edit_tool_path(tool) %>
-              <% end %>
-            </p> 
-          </div>
 
-          <div class="card-footer">
-            <small class="text-muted"><%= time_ago_in_words(tool.created_at) %> ago</small>
+              <p>
+                <% if tool.user != current_user %>
+                  <mark><%= link_to 'View Equipment Details', tool %></mark>
+                <% end %>
+                <% if tool.user == current_user %>
+                  <mark><%= link_to 'Edit listing', edit_tool_path(tool) %></mark>
+                <% end %>
+              </p>
           </div>
+        <div class="card-footer">
+        <small class="text-muted"><%= time_ago_in_words(tool.created_at) %> ago</small>
+        </div>
         </div> 
       </div>
     <% end %>
