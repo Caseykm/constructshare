@@ -1,32 +1,36 @@
 <p id="notice"><%= notice %></p>
+<h2>Equipment available for hire below or, <%= link_to 'Click here to create your own equipment listing', new_tool_path %></h2>
 
-<h1>Tools</h1>
+<h3></h3>
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Day price</th>
-      <th>Week price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="container">
+  <div class="card-columns">
+    <% @tools.reverse.each do |tool| %>
+      <div data-aos="flip-left" data-aos-delay="100">
+        <div class="card">
+          <%= image_tag(tool.image_url.to_s, class: "picture_icon, card-img-top") %>
+          <div class="card-body">
+            <h3 class="card-title"><%= tool.description %></h3>
+            <p class="card-text">
+              <p>Price per day $<%= tool.day_price %></p>
+              <p>Price per week $<%= tool.week_price %></p>
+              <p>Posted by <%= tool.user %></p>
+            <p>
+            <% if tool.user != current_user %>
+             <%= link_to 'View Equipment Details', tool %>
+             <% end %>
+             <br>
+              <% if tool.user == current_user %>
+                <%= link_to 'Edit listing', edit_tool_path(tool) %>
+              <% end %>
+            </p> 
+          </div>
 
-  <tbody>
-    <% @tools.each do |tool| %>
-      <tr>
-        <td><%= tool.description %></td>
-        <td><%= tool.day_price %></td>
-        <td><%= tool.week_price %></td>
-        <td><%= tool.image %></td>
-        <td><%= link_to 'Show', tool %></td>
-        <td><%= link_to 'Edit', edit_tool_path(tool) %></td>
-        <td><%= link_to 'Destroy', tool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+          <div class="card-footer">
+            <small class="text-muted"><%= time_ago_in_words(tool.created_at) %> ago</small>
+          </div>
+        </div> 
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Tool', new_tool_path %>
+  </div>
+</div> 
