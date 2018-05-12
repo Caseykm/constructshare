@@ -14,22 +14,19 @@
     <% if user_signed_in? %>
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
     <% else %>
-    <%= link_to('Login', new_user_session_path)  %>
+    <%= link_to('Login |', new_user_session_path) %>
+    <%= link_to('Join now!', new_user_registration_path)%>
     <% end %>
     
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+      <header class="navbar  navbar-inverse">
+    <div class="navbar-class">
+      <div class="container">
 </div>
 <%= yield %>
   </body>
 </html>
 
-<div id="user_nav">
-    <% if user_signed_in? %>
-        Signed in as <%= current_user.email %>. This cannot be cheese?
-        <%= link_to 'Sign out', destroy_user_session_path %>
-    <% else %>
-        <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
-    <% end %>
-</div>
 

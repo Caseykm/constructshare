@@ -3,8 +3,8 @@
   <div class="card">
   <%= image_tag(@tool.image_url.to_s, class: "picture_icon, card-img-top") %>
     <%= render 'form', tool: @tool %>
-    <%= link_to 'Remove listing', @tool, method: :delete, data: { confirm: 'Confirm equipment deletion?' } %>
     <br>
+    <h2><mark class="text-warning"><%= link_to 'Remove listing', @tool, method: :delete, data: { confirm: 'Confirm equipment deletion?' } %></mark><h2>
   </div>
   <h4> <%= link_to 'Back', tools_path %></h4>
 </div>
