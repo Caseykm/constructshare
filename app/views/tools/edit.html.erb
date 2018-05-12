@@ -1,6 +1,10 @@
-<h1>Editing Tool</h1>
-
-<%= render 'form', tool: @tool %>
-
-<%= link_to 'Show', @tool %> |
-<%= link_to 'Back', tools_path %>
+<div class="container">
+<h2>Edit your equipment</h2>
+  <div class="card">
+  <%= image_tag(@tool.image_url.to_s, class: "picture_icon, card-img-top") %>
+    <%= render 'form', tool: @tool %>
+    <%= link_to 'Remove listing', @tool, method: :delete, data: { confirm: 'Confirm equipment deletion?' } %>
+    <br>
+  </div>
+  <h4> <%= link_to 'Back', tools_path %></h4>
+</div>

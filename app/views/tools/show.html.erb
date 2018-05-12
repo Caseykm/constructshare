@@ -1,19 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @tool.description %>
-</p>
+<div class="container">
+  <div class="card">
+    <p>
+      <strong>-</strong>
+      <%= image_tag @tool.image.url, height: 420, width: 640%>
+    </p>
 
-<p>
-  <strong>Day price:</strong>
-  <%= @tool.day_price %>
-</p>
+    <p>
+      <strong>Description:</strong>
+      <%= @tool.description %>
+    </p>
 
-<p>
-  <strong>Week price:</strong>
-  <%= @tool.week_price %>
-</p>
+    <p>
+      <strong>Day price:</strong>
+      <%= @tool.day_price %>
+    </p>
 
-<%= link_to 'Edit', edit_tool_path(@tool) %> |
-<%= link_to 'Back', tools_path %>
+    <p>
+      <strong>Week price:</strong>
+      <%= @tool.week_price %>
+    </p>
+
+    <p>
+      <% if @tool.user != current_user %>
+        <h4> <%= link_to 'Back', tools_path %></h4>
+      <% end %>
+      <br>
+      <% if @tool.user == current_user %>
+        <%= link_to 'Edit listing', edit_tool_path(tool) %>
+      <br>
+      <% end %>
+    </p> 
+
+  </div>
+</div>
+
