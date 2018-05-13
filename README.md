@@ -149,7 +149,7 @@ Given I search for stuff, I can see pictures of those things.
 # Planning
 I have attempted to plan how the user would navigate around the site.  My initial plan is shown below and is what the project was loosely based around.
 
-![DB design](read-img/Userflow.pdf)
+![DB design](read-img/Userflow.png)
 
 My ERD diagram is shown below. It has changed many times over the build process and further changes will come in the near future.  
 ![DB design](read-img/ERD.png)
