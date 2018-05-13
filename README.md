@@ -20,9 +20,7 @@
   * Font 
   * Colours
 * Wireframes
-* ERD
-* Trello
-
+* Outstanding Issues
 
 -------------------
 ## Problem
@@ -151,4 +149,15 @@ I tried to create wireframes that would make ease of navigation for the customer
 ![DB design](read-img/Edit_listing.png)
 ![DB design](read-img/Account.png)
 
+## Outstanding Issues
 
+All my issues are outstanding, however to name just a few:
+  *Colours need work on all views
+  *Superfluous code.  Yes there is a lot of it. It isn't super. 
+  *Viewing your bookings
+  *Booking for more than one day
+  *There is no map
+  *Owner details/models need fleshing out
+  *Let's stop there for my state of mind
+
+[Return to overview](#overview)
