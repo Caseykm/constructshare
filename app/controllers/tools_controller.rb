@@ -10,12 +10,16 @@ class ToolsController < ApplicationController
   # GET /tools/1
   # GET /tools/1.json
   def show
+    @tools = Tool.all
   end
 
   # GET /tools/new
   def new
     # @tool = current_user.owner.tools.build
     @tool = Tool.new
+  end
+
+  def buy
   end
 
   # GET /tools/1/edit
