@@ -20,7 +20,8 @@
   * Font 
   * Colours
 * Wireframes
-* Outstanding Issues
+* Code Review
+* Future development/Outstanding Issues
 
 -------------------
 ## Problem
@@ -46,6 +47,8 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
   [Link to github](https://github.com/Caseykm/constructshare)  
 
   [My Trello page](https://trello.com/b/0BcEH8sk/two-sided-marketplace) 
+
+  [My ERD](https://www.dbdesigner.net/designer/schema/169677)
 
 ## Technology used:
 
@@ -154,6 +157,8 @@ I have attempted to plan how the user would navigate around the site.  My initia
 My ERD diagram is shown below. It has changed many times over the build process and further changes will come in the near future.  
 ![DB design](read-img/ERD.png)
 
+
+
 # Style guide
  
 As a company that deals in tools and construction it is important to convey strength, stability and reliability to our users. A Sans serif font would best fit this ideal as they are a bold no-nonsense design providing a sense of substance and strength.
@@ -183,7 +188,11 @@ I tried to create wireframes that would make ease of navigation for the customer
 ![DB design](read-img/Edit_listing.png)
 ![DB design](read-img/Account.png)
 
-## Outstanding Issues
+## Code review
+
+Without the code review of Lux, Andrew, etc. this project would be ashambles.  I helped review Lux's as well.  
+
+## Future development / Outstanding Issues
 
 All my issues are outstanding, however to name just a few:
 
@@ -195,4 +204,5 @@ All my issues are outstanding, however to name just a few:
   * Owner details/models need fleshing out
   * Let's stop there for my state of mind
 
+These issues will be fixed in future.  Also, ratings should be implemented as well as more company information and details of service.
 [Return to overview](#overview)
