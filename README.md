@@ -3,40 +3,41 @@
 
 ## Table of Contents
 
-Problem Definition and Solution
-
-#### Problem
-  1. Unfulfilled need
-  2. Problems with existing sites.
-  3. Growing demand
-
-#### Solution
-  1. User Stories
-  2. Preliminary User Stories
-  3. Detailed User Stories
-  4. Workflow
-  5. Style Guide
-  6. Wireframes
-  7. ERD
-  8. Trello
+* Problem Definition
+  * Unfulfilled need
+  * Problems with existing sites.
+  * Growing demand
+* Solution
+* User Stories
+  * Preliminary User Stories
+  * Detailed User Stories
+* Workflow
+* Style Guide
+  * Font 
+  * Colours
+  *
+* Wireframes
+* ERD
+* Trello
 
   [My site at Heroku](nba.com "to the site")  
   [link to github](construct.github.com)
 -------------------
 ## Problem
 
-There is a unfulfilled need for an online peer to peer construction equipment leasing website. There are many sites of individual leasing companies, but none are peer to peer.  
-This leaves equipment owners limited options to advertise their equipment for lease.  
-It also leaves lessors with higher rental rates than what one would expect from peer to peer leasing.  
+There is a unfulfilled need for an online peer to peer construction equipment leasing website. There are many sites of individual, local leasing companies, but none are peer to peer.  
 
-Another problem with existing sites is that they are often local leasing companies. Borrowers need to find conveniently located equipment, however if they find an individual leasing company, they are not guaranteed to have found the most convenient location.  
+This can leave renters in limbo finding conveniently located equipment because individual leasing companies may not be close, while their neighbour one km away, may have what you need.  
+ 
+Traditional renting also comes with higher rental costs than what peer to peer leasing could provide.  
+And if you're a potential or existing equipment owner, you have limited options to make use of idling equipment, which can make ownership uneconomical. 
 
-The construction lending market is expanding significantly.  This increases the demand for equipment. It also increases the potential supply of inventory available for lease, in the form of left-over equipment from completed projects.  
+The construction lending market is expanding significantly increasing the demand for equipment, while an increasing  potential supply of inventory in the form of left-over equipment from completed projects, is promoting a great demand for a peer to peer construction equipment platform.  Globally, there is only one company really providing this and they are only in a handful of local markets mostly in the US.
 
 ## Solution
 
-Create a peer to peer, construction leasing/lending website that shows the availability of equipment available on a map for lease within an area.  
-For lessees, this solution will untap latent inventory,  enabling increased return on assets.  For lessors, it will provide increased equipment choice, locational convenience and a potentially more affordable solution, in a one-stop shop with national scope.  
+Create a peer to peer, construction leasing/lending website that can meet the ever-increasing demand for equipment and harness the growing supply of left-over equipment, making equipment ownership economical, and sustainable.  
+For lessees, this solution will untap latent inventory,  enabling increased return on assets.  For lessors, it will provide increased equipment choice, locational convenience and a potentially more affordable solution, in a one-stop shop with national, if not global scope.  
 
 
 ## Preliminary user stories
@@ -56,7 +57,7 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
 |As a lessor/lessee, I want the equipment to be able to be booked for multiple days. 
 |As a user, I want to be able to send messages to other users.  
 |As a vendor, I want to be able to indicate the area of equipment availability. 
-|As borrower, I want to be able to search for a particular product within  an area so that I can find what I want and so I can compare prices.
+|As borrower, I want to be able to search for product so that I can find what I want and compare prices.
 |
 
 # Detailed user stories
