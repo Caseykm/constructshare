@@ -4,7 +4,7 @@
   <div class="card">
     <p>
       <strong>-</strong>
-      <%= image_tag @tool.image.url, height: 420, width: 640%>
+      <%= image_tag @tool.image.url, height: 420, width: 640 %>
     </p>
 
     <p>
@@ -24,15 +24,15 @@
 
     <p>
       <% if @tool.user != current_user %>
-        <h4> <%= link_to 'Back', tools_path %></h4>
+        <h3><mark> <%= link_to 'Book this equipment?', tools_path %></mark></h3>
       <% end %>
       <br>
       <% if @tool.user == current_user %>
-        <%= link_to 'Edit listing', edit_tool_path(tool) %>
+        <%= link_to 'Edit listing', edit_tool_path(@tool) %>
       <br>
       <% end %>
     </p> 
-
   </div>
+  <h3> <%= link_to 'Back', tools_path %></h3>
 </div>
 
