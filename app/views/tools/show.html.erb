@@ -13,26 +13,46 @@
     </p>
 
     <p>
-      <strong>Day price:</strong>
-      <%= @tool.day_price %>
+      <strong>Day price: </strong> $
+      <%=@tool.day_price %>
     </p>
 
     <p>
-      <strong>Week price:</strong>
+      <strong>Week price: </strong> $
       <%= @tool.week_price %>
     </p>
 
     <p>
-      <% if @tool.user != current_user %>
-        <h3><mark> <%= link_to 'Book this equipment?', tools_path %></mark></h3>
-      <% end %>
-      <br>
-      <% if @tool.user == current_user %>
-        <%= link_to 'Edit listing', edit_tool_path(@tool) %>
-      <br>
+      <% if user_signed_in? && @tool.user != current_user %>
+        <h4>Book this equipment?</h4>
       <% end %>
     </p> 
+    
+
+<% if user_signed_in? && @tool.user.id != current_user.id %>
+  <%= form_tag charges_path do %>
+  <%= hidden_field_tag "tool_id", @tool.id %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A day's booking"
+          data-amount="<%= @tool.day_price*100 %>"
+          data-locale="auto"></script>
+<% end %>
+        <% if @tool.user == current_user %>
+        <%= link_to 'Edit listing', edit_tool_path(@tool) %>
+      <% end %>
+
+<% end %>
+
   </div>
-  <h3> <%= link_to 'Back', tools_path %></h3>
+  <h3><mark><%= link_to 'Back', tools_path %></mark></h3>
 </div>
 

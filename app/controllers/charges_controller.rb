@@ -1,11 +1,16 @@
 class ChargesController < ApplicationController
 
   def new
+    @tool = Tool.find(params[:tool_id])
+    @amount = @tool.day_price
   end
   
   def create
     # Amount in cents
-    @amount = 500
+
+    @tool = Tool.find(params[:tool_id])
+    # Amount in cents
+    @amount = (@tool.day_price * 100).floor
   
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
@@ -16,7 +21,7 @@ class ChargesController < ApplicationController
       :customer    => customer.id,
       :amount      => @amount,
       :description => 'Rails Stripe customer',
-      :currency    => 'usd'
+      :currency    => 'aud'
     )
   
   rescue Stripe::CardError => e
