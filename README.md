@@ -176,7 +176,17 @@ I want to use colours relating to the construction industry.  The colours below 
 ![DB design](read-img/colours.png)
 
 # Wireframes
-I tried to create wireframes that would make ease of navigation for the customer easy. 
+I tried to create wireframes that would make ease of navigation for the customer easy. I you want to see the links they are below, but the pictures are here anyway. 
+
+  [Wireframe](https://wireframe.cc/jbNvOD)
+  [Wireframe](https://wireframe.cc/ospasP)
+  [Wireframe](https://wireframe.cc/5kXPBg)
+  [Wireframe](https://wireframe.cc/gUpNP5)
+  [Wireframe](https://wireframe.cc/E1JevD)
+  [Wireframe](https://wireframe.cc/s2oRuE)
+  [Wireframe](https://wireframe.cc/Q68bhd)
+  [Wireframe](https://wireframe.cc/UF4AG9)
+  [Wireframe](https://wireframe.cc/a4Ur50)
 
 ![DB design](read-img/find_equipment.png)
 ![DB design](read-img/Homepage.png)
@@ -187,6 +197,7 @@ I tried to create wireframes that would make ease of navigation for the customer
 ![DB design](read-img/booking_listing.png)
 ![DB design](read-img/Edit_listing.png)
 ![DB design](read-img/Account.png)
+
 
 ## Code review
 
