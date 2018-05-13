@@ -98,6 +98,7 @@ As a user I can create a profile.
 User should be able to enter data to customise their profile.
 
 User should be able to do this securely.
+---------------------------
 
 
 *As a User I want nobody other than me to be able to edit my profile*
@@ -108,28 +109,40 @@ Given someone else tries to edit my details, listings or bookings,
 
 They are redirected back to their homepage.
 
+---------------------------
+
 *As a User I want to search for nearby equipment*
 
 Because it will be convenient for me.
 
 Given I search for something, nearby options are returned.
 
+
+---------------------------
+
 *As a User I wish to list my stuff and provide details*
 
 Because it will help me rent my things.
 
 Given I click to make a new listing, fields are given to enter data and data is marketed to latent customers.
+---------------------------
+
+
 
 *As a User I want to be able make an online payment*
 
 Because I do not want to deal in cash.
 
 Given I make a booking, I can have an online payment option.
+---------------------------
+
+
 
 *As a User I want to be able to view pictures of the equipment*
 Because it will allow me to see what I am renting.
 
 Given I search for stuff, I can see pictures of those things.
+---------------------------
 
 # Planning
 I have attempted to plan how the user would navigate around the site.  My initial plan is shown below and is what the project was loosely based around.  
