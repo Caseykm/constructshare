@@ -91,13 +91,12 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
 
 *As a user I can create a personal profile.*  
 
-**Feature:** Profile creation 
-
 As a user I can create a profile.
 
 User should be able to enter data to customise their profile.
 
 User should be able to do this securely.
+
 ---------------------------
 
 
@@ -125,6 +124,7 @@ Given I search for something, nearby options are returned.
 Because it will help me rent my things.
 
 Given I click to make a new listing, fields are given to enter data and data is marketed to latent customers.
+
 ---------------------------
 
 
@@ -134,6 +134,7 @@ Given I click to make a new listing, fields are given to enter data and data is 
 Because I do not want to deal in cash.
 
 Given I make a booking, I can have an online payment option.
+
 ---------------------------
 
 
@@ -142,11 +143,13 @@ Given I make a booking, I can have an online payment option.
 Because it will allow me to see what I am renting.
 
 Given I search for stuff, I can see pictures of those things.
+
 ---------------------------
 
 # Planning
-I have attempted to plan how the user would navigate around the site.  My initial plan is shown below and is what the project was loosely based around.  
-![DB design](read-img/Userflow.xml.pdf)
+I have attempted to plan how the user would navigate around the site.  My initial plan is shown below and is what the project was loosely based around.
+
+![DB design](read-img/Userflow.pdf)
 
 My ERD diagram is shown below. It has changed many times over the build process and further changes will come in the near future.  
 ![DB design](read-img/ERD.png)
