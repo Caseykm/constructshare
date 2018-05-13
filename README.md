@@ -8,6 +8,7 @@
   * Problems with existing sites.
   * Growing demand
 * Solution
+* Technology
 * User Stories
   * Preliminary User Stories
   * Detailed User Stories
@@ -15,13 +16,11 @@
 * Style Guide
   * Font 
   * Colours
-  *
 * Wireframes
 * ERD
 * Trello
 
-  [My site at Heroku](nba.com "to the site")  
-  [link to github](construct.github.com)
+
 -------------------
 ## Problem
 
@@ -38,6 +37,16 @@ The construction lending market is expanding significantly increasing the demand
 
 Create a peer to peer, construction leasing/lending website that can meet the ever-increasing demand for equipment and harness the growing supply of left-over equipment, making equipment ownership economical, and sustainable.  
 For lessees, this solution will untap latent inventory,  enabling increased return on assets.  For lessors, it will provide increased equipment choice, locational convenience and a potentially more affordable solution, in a one-stop shop with national, if not global scope.  
+
+## Links
+
+  [My site at Heroku](https://constructshare.herokuapp.com)  
+  [Link to github](https://github.com/Caseykm/constructshare)
+  [My Trello page](https://trello.com/b/0BcEH8sk/two-sided-marketplace) 
+
+## Technology used:
+
+* Ruby on Rails, HTML, CSS, Bootstrap, Github, Heroku
 
 
 ## Preliminary user stories
@@ -65,7 +74,44 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
 
 **Feature:** Profile creation 
 
-As a user I can create a profile
+As a user I can create a profile.
+
+User should be able to enter data to customise their profile.
+
+User should be able to do this securely.
+
+
+*As a User I want nobody other than me to be able to edit my profile*
+
+Because I want to have control over my profile details.
+
+Given someone else tries to edit my details, listings or bookings,
+
+They are redirected back to their homepage.
+
+*As a User I want to search for nearby equipment*
+
+Because it will be convenient for me.
+
+Given I search for something, nearby options are returned.
+
+*As a User I wish to list my stuff and provide details*
+
+Because it will help me rent my things.
+
+Given I click to make a new listing, fields are given to enter data and data is marketed to latent customers.
+
+*As a User I want to be able make an online payment*
+
+Because I do not want to deal in cash.
+
+Given I make a booking, I can have an online payment option.
+
+*As a User I want to be able to view pictures of the equipment*
+Because it will allow me to see what I am renting.
+
+Given I search for stuff, I can see pictures of those things.
+
 
 
 # Style guide
@@ -77,3 +123,10 @@ More recently, Neue Helvetica etext was developed which is,
 
 *"specifically tailored for the text-heavy environments of e-readers, tablets, mobile devices, and the web. Neue Helvetica eText consists of four weights with corresponding italics, all designed and optimized to enhance the reading experience at the smaller point sizes that contemporary web and device environments call for."*
 
+
+# Colours
+![DB design](read-img/colours.png)
+
+* Wireframes
+* ERD
+* Trello
