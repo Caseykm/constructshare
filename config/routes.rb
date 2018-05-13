@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :faqs
   resources :owners
   resources :tools
   root 'tools#index'
