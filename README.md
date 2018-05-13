@@ -42,7 +42,9 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
 ## Links
 
   [My site at Heroku](https://constructshare.herokuapp.com)  
-  [Link to github](https://github.com/Caseykm/constructshare)
+
+  [Link to github](https://github.com/Caseykm/constructshare)  
+
   [My Trello page](https://trello.com/b/0BcEH8sk/two-sided-marketplace) 
 
 ## Technology used:
@@ -51,26 +53,27 @@ For lessees, this solution will untap latent inventory,  enabling increased retu
 
 
 ## Preliminary user stories
-|
-|---
-|As a property developer, I want to find equipment near me to build my project.  
-|As a construction worker, I want to see a map that shows all available equipment that is available for use.    
-|As a builder, I want to be able to search for equipment within my area.
-|As a user, I want to be able to enter my personal details.
-|As a prospective lessor, I want to be able to register as a borrower.  
-|As an equipment owner, I want to be able to list my unused equipment for rental.  
-|As a equipment owner, I want to be able to register as a borrower.  
-|As a user I want to be able to have a convenient method of payment.  
-|As a lessee, I want to be able to list multiple products to rent.  
-|As a lessor, I want to be able to return the leased equipment conveniently.  
-|As an equipment owner, I want my wares to be find
-|As a lessor/lessee, I want the equipment to be able to be booked for multiple days. 
-|As a user, I want to be able to send messages to other users.  
-|As a vendor, I want to be able to indicate the area of equipment availability. 
-|As borrower, I want to be able to search for product so that I can find what I want and compare prices.
-|
+
+|---|
+|As a property developer, I want to find equipment near me to build my project.  |
+|As a construction worker, I want to see a map that shows all available equipment that is available for use. |   
+|As a builder, I want to be able to search for equipment within my area.|
+|As a user, I want to be able to enter my personal details.|
+|As a prospective lessor, I want to be able to register as a borrower.  |
+|As an equipment owner, I want to be able to list my unused equipment for rental.  |
+|As a equipment owner, I want to be able to register as a borrower.  |
+|As a user I want to be able to have a convenient method of payment.  |
+|As a lessee, I want to be able to list multiple products to rent.  |
+|As a lessor, I want to be able to return the leased equipment conveniently. | 
+|As an equipment owner, I want my wares to be found. |
+|As a lessor/lessee, I want the equipment to be able to be booked for multiple days. |
+|As a user, I want to be able to send messages to other users.  |
+|As a vendor, I want to be able to indicate the area of equipment availability. |
+|As borrower, I want to be able to search for product so that I can find what I want and compare prices.|
+|---|
 
 # Detailed user stories
+
 *As a user I can create a personal profile.*  
 
 **Feature:** Profile creation 
@@ -152,12 +155,13 @@ I tried to create wireframes that would make ease of navigation for the customer
 ## Outstanding Issues
 
 All my issues are outstanding, however to name just a few:
-  *Colours need work on all views
-  *Superfluous code.  Yes there is a lot of it. It isn't super. 
-  *Viewing your bookings
-  *Booking for more than one day
-  *There is no map
-  *Owner details/models need fleshing out
-  *Let's stop there for my state of mind
+
+  * Colours need work on all views
+  * Superfluous code.  Yes there is a lot of it. It isn't super. 
+  * Viewing your bookings
+  * Booking for more than one day
+  * There is no map
+  * Owner details/models need fleshing out
+  * Let's stop there for my state of mind
 
 [Return to overview](#overview)
